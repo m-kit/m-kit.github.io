@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".mobile_menu").click(function() {
+                $("nav ul").animate({
+                    "left": "+=400px"
+                });
+            });
+            $("nav ul li").click(function() {
+                $("nav ul").animate({
+                    "left": "-=400px"
+                });
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
+    <title>test</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <nav>
+                <img class="mobile_menu" src="img/menu.png" />
+                <ul>
+                    <li>
+                        <a href="#profile">
+                            <span class="menu_image">
+                          <img src="img/profile.png" />
+                        </span>
+                            <span class="link">
+                          自己紹介
+                        </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#works">
+                            <span class="menu_image">
+                        <img src="img/works.png" />
+                      </span>
+                            <span class="link">
+                        制作物
+                      </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="menu_image">
+                      <img src="img/contact.png" />
+                    </span>
+                            <span class="link">
+                      連絡先
+                    </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="profile">
+            <div class="container column100 mark">
+                <div class="title">
+                </div>
+                <div class="description">
+                    <span class="line">m.kitahara</span>
+                    <p>
+                        フリーのデザイナ、プログラマとして活動中。<br /> 学生時代にJQuery、C#を用いたwebアプリケーション開発を経験。
+                        <br /> また、インディーズゲームのUI等のデザインを担当。
+                        <br /> その後、新卒でシステムエンジニアとしてJavaEE、RubyOnRails等を用いたWebアプリケーション開発・運用に3年間携わる。
+                        <br />
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="works">
+            <h2>制作物</h2>
+            <div class="gallery">
+                <div class="content">
+                    <a href="http://neetpia.sakura.ne.jp/works/TouhouBoushuen/index.html" target="_blank">
+                        <img src="img./works/boushuen.png" />
+                        <div class="caption">
+                            <span>東方蟒酒宴/インディーズゲームサークルNeetpia</span>
+                            <p>
+                                Webサイト制作
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content">
+                  <a href="http://neetpia.sakura.ne.jp/works/toust/index.html" target="_blank">
+                      <img src="img./works/strategy.png" />
+                      <div class="caption">
+                          <span>とうほう☆ストラテジー/インディーズゲームサークルNeetpia</span>
+                          <p>
+                              ゲームUI、タイトルロゴ等のデザイン
+                          </p>
+                      </div>
+                  </a>
+                </div>
+                <div class="content">
+                  <a href="http://neetpia.sakura.ne.jp/works/GensouSenryakutan/index.html" target="_blank">
+                      <img src="img./works/senryakutan.png" />
+                      <div class="caption">
+                          <span>幻想戦略譚/インディーズゲームサークルNeetpia</span>
+                          <p>
+                              ゲームUI、キャラ立ち絵、タイトルロゴのデザイン
+                          </p>
+                      </div>
+                  </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>連絡先</h2>
+            <span>twitter</span>
+            <span>m.kitahara.zep11n**gmail</span>
+        </section>
+
+        <footer>
+            &copy; 2017 m.kitahara All Rights Reserved.
+        </footer>
+    </div>
+</body>
+
+</html>
