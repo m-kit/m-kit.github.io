@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.lazyload.min.js"></script>
     <script>
         $(document).ready(function() {
             $(".mobile_menu").click(function() {
@@ -17,6 +18,8 @@
                     "left": "-=400px"
                 });
             });
+
+            $( 'img.lazy' ).lazyload();
         });
     </script>
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
@@ -85,7 +88,7 @@
             <div class="gallery">
                 <div class="content">
                     <a href="http://neetpia.sakura.ne.jp/works/TouhouBoushuen/index.html" target="_blank">
-                        <img src="img/works/boushuen.png" />
+                        <img src="img/dummy.png" data-original="img/works/boushuen.png" class="lazy"/>
                         <div class="caption">
                             <span>東方蟒酒宴/インディーズゲームサークルNeetpia</span>
                             <p>
@@ -96,7 +99,7 @@
                 </div>
                 <div class="content">
                   <a href="http://neetpia.sakura.ne.jp/works/toust/index.html" target="_blank">
-                      <img src="img/works/strategy.png" />
+                      <img src="img/dummy.png" data-original="img/works/strategy.png" class="lazy"/>
                       <div class="caption">
                           <span>とうほう☆ストラテジー/インディーズゲームサークルNeetpia</span>
                           <p>
@@ -107,7 +110,7 @@
                 </div>
                 <div class="content">
                   <a href="http://neetpia.sakura.ne.jp/works/GensouSenryakutan/index.html" target="_blank">
-                      <img src="img/works/senryakutan.png" />
+                      <img src="img/dummy.png" data-original="img/works/senryakutan.png" class="lazy" />
                       <div class="caption">
                           <span>幻想戦略譚/インディーズゲームサークルNeetpia</span>
                           <p>
