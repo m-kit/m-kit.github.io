@@ -4,6 +4,11 @@ body{
   background-size: 50%;
 }
 
+a{
+  text-decoration: none;
+  color: #4B7363;
+}
+
 .wrap{
   margin: 0 5px;
   overflow: hidden;
@@ -35,8 +40,6 @@ nav li{
 
 nav li a{
   width: 100%;
-  text-decoration: none;
-  color: #4B7363;
   font-weight: bold;
 }
 
@@ -44,7 +47,7 @@ nav li .link:first-letter{
   color: red;
 }
 
-li span{
+nav li span{
   display: block;
 }
 
@@ -52,6 +55,7 @@ section{
   margin-top: -100px;
   margin-bottom: 500px;
   padding-top: 100px;
+  min-height: 400px;
 }
 
 .container{
@@ -102,6 +106,13 @@ section{
 .mark{
   background-image: url(../img/mark2.png);
   background-repeat: no-repeat;
+}
+
+.contact{
+    background-image: url(../img/contact_back.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 400px;
 }
 
 .title{
