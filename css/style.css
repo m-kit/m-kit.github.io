@@ -155,15 +155,6 @@ section{
   border-bottom: #4B7363 2px dotted;
 }
 
-.works dt:before{
-  content: "▽";
-}
-
-.works dd{
-  font-size: 90%;
-  margin-bottom: 10px;
-}
-
 @media screen and (max-width: 768px){
   nav{
     width: 100%;
