@@ -1,18 +1,24 @@
-div {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 body{
   font-family: "Sawarabi Gothic";
   background-image: url(../img/Texture-01.png);
   background-size: 50%;
 }
 
+div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 a{
   text-decoration: none;
   color: #4B7363;
+}
+
+h2{
+  border-bottom:#EBD9BC 3px solid;
+  border-left: #EBD9BC 5px solid;
+  padding-left: 10px;
 }
 
 .wrap{
@@ -76,6 +82,12 @@ section{
   display:flex;
   justify-content: space-around;
   flex-wrap:wrap;
+}
+
+.gallery::after{
+  content:"";
+  display: block;
+  width:33%;
 }
 
 .gallery .content{
@@ -150,12 +162,6 @@ section{
 .works dd{
   font-size: 90%;
   margin-bottom: 10px;
-}
-
-h2{
-  border-bottom:#EBD9BC 3px solid;
-  border-left: #EBD9BC 5px solid;
-  padding-left: 10px;
 }
 
 @media screen and (max-width: 768px){
