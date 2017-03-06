@@ -1,7 +1,7 @@
 body{
   font-family: "Sawarabi Gothic";
   background-image: url(../img/Texture-01.png);
-  background-size: 50%;
+  background-size: 2000px 1500px;
 }
 
 div {
@@ -130,6 +130,7 @@ section{
   margin-bottom: 10px;
   border: #000 1px solid;
   background-color: #FFF;
+  max-width: 480px;
   overflow: hidden;
   width: 33%;
   font-size: 80%;
@@ -161,11 +162,13 @@ section{
 
 .mark{
   background-image: url(../img/mark2.png);
+  background-size: 578px 495px;
   background-repeat: no-repeat;
 }
 
 .contact{
     background-image: url(../img/contact_back.png);
+    background-size: 367px 213px;
     background-repeat: no-repeat;
     background-position: right;
     min-height: 400px;
