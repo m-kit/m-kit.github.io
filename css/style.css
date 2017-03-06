@@ -22,13 +22,15 @@ h2{
 }
 
 .wrap{
-  margin: 0 5px;
+  margin: 0 auto;
+  max-width: 1600px;
   overflow: hidden;
 }
 
 header{
   position: fixed;
   width: 100%;
+  max-width: 1600px;
 }
 
 nav .mobile_menu{
