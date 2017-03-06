@@ -1,7 +1,7 @@
 body{
   font-family: "Sawarabi Gothic";
   background-image: url(../img/Texture-01.png);
-  background-size: 2000px 1500px;
+  background-size: 50%;
 }
 
 div {
@@ -162,13 +162,11 @@ section{
 
 .mark{
   background-image: url(../img/mark2.png);
-  background-size: 578px 495px;
   background-repeat: no-repeat;
 }
 
 .contact{
     background-image: url(../img/contact_back.png);
-    background-size: 367px 213px;
     background-repeat: no-repeat;
     background-position: right;
     min-height: 400px;
@@ -191,6 +189,23 @@ section{
 
 .line{
   border-bottom: #4B7363 2px dotted;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    background-image: url(../img/Texture-01@2x.png);
+    background-size: 25%;
+  }
+
+  .mark{
+    background-image: url(../img/mark2@2x.png);
+    background-size: 578px 495px;
+  }
+
+  .contact{
+      background-image: url(../img/contact_back@2x.png);
+      background-size: 367px 213px;
+  }
 }
 
 @media screen and (max-width: 768px){
